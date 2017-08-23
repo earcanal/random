@@ -4,9 +4,11 @@
 
 <a name="equanimity"></a>**Equanimity** The ability to allow sensory experience to come and go without push and pull.
 
-**Exclusive emphasis**
+**Exclusive Emphasis**
 
-**Inclusive emphasis**
+**Focus Range** The set of experiences you intentionally focus on.
+
+**Inclusive Emphasis**
 
 **Label** A word that names what you're experiencing in a given moment.
 
