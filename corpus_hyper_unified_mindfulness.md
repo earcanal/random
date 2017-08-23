@@ -16,13 +16,13 @@
 
 **Mindful Awareness** [Concentration power](#concentration), [sensory clarity](#sensory_clarity), and [equanimity](#equanimity) working together.
 
-**Noting**
+<a name="noting"></a>**Noting**
 
 <a name="sensory_clarity"></a>**Sensory Clarity** The ability to keep track of what you’re experiencing in the moment.
 
 **Spoken [Label](#label)** A label that you speak out loud.
 
-<a name="zoom"></a>**Zoom** Control the spatial scope of your attention during a given act of noting.
+<a name="zoom"></a>**Zoom** Control the spatial scope of your attention during a given act of [noting](*noting).
 
 **[Zoom](*zoom) In**
 
