@@ -22,7 +22,7 @@
 
 **Spoken [Label](#label)** A label that you speak out loud.
 
-<a name="zoom"></a>**Zoom** Control the spatial scope of your attention during a given act of [noting](*noting).
+<a name="zoom"></a>**Zoom** Control the spatial scope of your attention during a given act of [noting](#noting).
 
 **[Zoom](*zoom) In**
 
