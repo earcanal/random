@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Timeline | Basic demo</title>
+  <title>Timeline | Buddhism</title>
 
   <style type="text/css">
     body, html {
@@ -19,20 +19,29 @@
   // DOM element where the Timeline will be attached
   var container = document.getElementById('visualization');
 
+ var groups = new vis.DataSet([
+    {id: 0, content: 'India', value: 1},
+    {id: 1, content: 'Sri Lanka', value: 2},
+    {id: 5, content: 'General world history', value: 3},
+  ]);
+
   // Create a DataSet (allows two way data-binding)
   var items = new vis.DataSet([
-    {id: 1, content: '<a href="https://en.wikipedia.org/wiki/Aristotle">Aristotle</a>', start: new Date(-384,0,1), end: new Date(-322,0,1)},
-    {id: 2, content: '<a href="https://en.wikipedia.org/wiki/Gautama_Buddha">Gautama Buddha</a>', start: new Date(-563,0,1), end: new Date(-483,0,1)},
-    {id: 3, content: '<a href="https://en.wikipedia.org/wiki/Marcus_Aurelius">Marcus Aurelius</a>', start: new Date(121,4,26), end: new Date(180,3,17)},
-    {id: 4, content: '<a href="https://en.wikipedia.org/wiki/Immanuel_Kant">Immanuel Kant</a>', start: new Date(1724,4,22), end: new Date(1804,2,12)},
-    {id: 5, content: '<a href="https://en.wikipedia.org/wiki/Alexander_the_Great">Alexander the Great</a>', start: new Date(-356,7,21), end: new Date(-323,6,11)},
+    {id: 1, content: '<a href="https://en.wikipedia.org/wiki/Aristotle">Aristotle</a>', start: new Date(-384,0,1), end: new Date(-322,0,1), group: 5},
+    {id: 2, content: '<a href="https://en.wikipedia.org/wiki/Gautama_Buddha">Gautama Buddha</a><br/> ("long chronology")', start: new Date(-566,0,1), end: new Date(-486,0,1), group: 0},
+    {id: 3, content: '<a href="https://en.wikipedia.org/wiki/Gautama_Buddha">Gautama Buddha</a><br/> ("short chronology")', start: new Date(-448,0,1), end: new Date(-368,0,1), group: 0},
+    {id: 4, content: '<a href="https://en.wikipedia.org/wiki/Marcus_Aurelius">Marcus Aurelius</a>', start: new Date(121,4,26), end: new Date(180,3,17), group: 5},
+    {id: 5, content: '<a href="https://en.wikipedia.org/wiki/First_Buddhist_council">First Council at Rājagṛha</a><br/> ("long chronology")', start: new Date(-486,0,1), group: 0},
+    {id: 6, content: '<a href="https://en.wikipedia.org/wiki/First_Buddhist_council">First Council at Rājagṛha</a><br/> ("short chronology")', start: new Date(-368,0,1), group: 0},
+    {id: 7, content: '<a href="https://en.wikipedia.org/wiki/Devanampiya_Tissa_of_Anuradhapura">Reign of Devanampiya Tissa</a><br/> Buddhism established in Sri Lanka', start: new Date(-247,0,1), end: new Date(-207,0,1), group: 1},
+    
   ]);
 
   // Configuration for the Timeline
   var options = {};
 
   // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options);
+  var timeline = new vis.Timeline(container, items, groups, options);
 </script>
 </body>
 </html>
