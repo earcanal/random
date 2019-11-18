@@ -1,7 +1,10 @@
 #!/usr/bin/env perl
 
-# REPLACE (yes REPLACE) a tree of PDF scripts containing comments with flattened
-# versions. You should probably make a copy of the originals before running this.
+# Flatten marked PDF scripts for batch upload as a .zip
+#
+# REPLACEs a tree of PDF scripts containing comments with
+# flattened versions. You should probably make a copy of the originals
+# before running this.
 #
 # The benefit of this approach is that students often upload with the same
 # filename, so you can't put all of the files into the same directory.
